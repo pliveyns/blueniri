@@ -1,0 +1,11 @@
+modules:
+
+  - type: dnf
+    repos:
+      copr:
+        - yalter/niri
+    install:
+      packages:
+        - gdm
+        - niri
+
