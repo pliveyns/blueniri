@@ -4,8 +4,15 @@ modules:
     repos:
       copr:
         - yalter/niri
+        - avengemedia/dms
     install:
       packages:
-        - gdm
         - niri
+        - dms
+        - dms-greeter
+
+  - type: systemd
+    system:
+      enabled:
+        - greetd
 
