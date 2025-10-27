@@ -12,8 +12,8 @@ modules:
         #- dms-greeter
         #- gtkgreet
 
-  - type: systemd
-    system:
-      enabled:
-        #- greetd
+#  - type: systemd
+#    system:
+#      enabled:
+#        #- greetd
 
