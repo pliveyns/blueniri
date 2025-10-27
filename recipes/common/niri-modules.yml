@@ -10,10 +10,10 @@ modules:
         - niri
         #- dms
         #- dms-greeter
-        - gtkgreet
+        #- gtkgreet
 
   - type: systemd
     system:
       enabled:
-        - greetd
+        #- greetd
 
