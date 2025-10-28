@@ -8,6 +8,8 @@ modules:
       packages:
         - niri
         - greetd
+        - fprintd
+        - fprintd-pam
 
 #  - type: systemd
 #    system:
