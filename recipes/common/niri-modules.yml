@@ -7,7 +7,7 @@ modules:
     install:
       packages:
         - niri
-        - gdm
+        - greetd
 
 #  - type: systemd
 #    system:
