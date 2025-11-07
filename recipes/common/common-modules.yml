@@ -7,29 +7,35 @@ modules:
 
   - type: script
     snippets:
-      - "dnf5 install -y 'dnf5-command(copr)'"
+      #- "dnf5 install -y 'dnf5-command(copr)'"
+      - "dnf5 install -y 'dnf5-command(config-manager)'"
 
-  - type: containerfile
-    snippets:
-      - RUN rpm-ostree install just powerstat
-      - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-udev-rules.noarch.rpm /
-      - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-update-services.noarch.rpm /
-      - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-signing.noarch.rpm /
-      - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-luks.noarch.rpm /
-      - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-just.noarch.rpm /
-      - RUN rpm -ivh /ublue-os-udev-rules.noarch.rpm
-      - RUN rpm -ivh /ublue-os-update-services.noarch.rpm
-      - RUN rpm -ivh /ublue-os-signing.noarch.rpm
-      - RUN rpm -ivh /ublue-os-luks.noarch.rpm
-      - RUN rpm -ivh /ublue-os-just.noarch.rpm
+  # Universal Blue packages
+  - type: dnf
+    repos:
+      copr:
+        - ublue-os/packages
+    install:
+      packages:
+        - uupd
+        - ublue-setup-services
+        - ublue-os-udev-rules
+        - ublue-os-signing
+        - ublue-os-luks
+        - ublue-os-just
 
   - type: dnf
     install:
       packages:
         - langpacks-en_GB
         - distrobox
+        - alacritty
+        - syncthing
+        - fzf
+        - just
+        - powerstat
+        
     remove:
       packages:
         - firefox
         - firefox-langpacks
-
