@@ -30,6 +30,8 @@ modules:
         - langpacks-en_GB
         - distrobox
         - alacritty
+        - kitty
+        - kitty-terminfo
         - syncthing
         - fzf
         - just
