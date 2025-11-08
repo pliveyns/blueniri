@@ -20,3 +20,7 @@ modules:
       enabled:
         - dms.service
 
+  - type: script
+    snippets:
+      - "sed -i '/^command = /c\command = /usr/bin/dms-greeter --command niri -C /etc/greetd/dms-nir.kdl' /etc/greetd/config.toml"
+
