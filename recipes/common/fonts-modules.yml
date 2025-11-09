@@ -1,0 +1,18 @@
+modules:
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - FiraCode
+        - Hack
+        - JetBrainsMono
+        - NerdFontsSymbolsOnly
+      google-fonts:
+        - Roboto
+        - Open Sans
+
+  - type: dnf
+    install:
+      packages:
+        - fontawesome-fonts-all
+        - cascadia-fonts-all
+
