@@ -3,7 +3,7 @@ modules:
   - type: dnf
     repos:
       copr:
-        - yalter/niri
+        - yalter/niri-git
         - avengemedia/dms
         - avengemedia/danklinux
     install:
