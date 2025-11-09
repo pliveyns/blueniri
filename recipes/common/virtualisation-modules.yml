@@ -1,0 +1,15 @@
+modules:
+
+  - type: dnf
+    install:
+      packages:
+        - virt-install      # KVM virtualisation
+        - virt-manager      # grahical gui for kvm virtualisation
+        - edk2-ovmf         # uefi for kvm guests
+        - swtpm             # Software TPM for KVM
+        - libvirt
+        - libvirt-nss
+        - qemu-kvm
+        - guestfs-tools
+        - genisoimage
+
