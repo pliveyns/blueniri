@@ -4,13 +4,15 @@ modules:
     repos:
       copr:
         - yalter/niri-git
-        - avengemedia/dms
+        - avengemedia/dms-git
         - avengemedia/danklinux
     install:
       packages:
         - niri
         - dms
+        - dms-cli
         - dms-greeter
+        - dgop
 
   - type: systemd
     system:
