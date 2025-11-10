@@ -1,0 +1,14 @@
+modules:
+  - type: dnf
+    repos:
+      files:
+        - netbird.repo
+    install:
+      packages:
+        - netbird
+        - netbird-ui
+  - type: systemd
+    system:
+      enabled:
+        - netbird.service
+
