@@ -8,7 +8,9 @@ modules:
         - avengemedia/danklinux
     install:
       packages:
-        - niri
+        - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
+          packages:
+            - niri
         - dms
         - dms-cli
         - dms-greeter
