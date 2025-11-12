@@ -82,3 +82,13 @@ libvirt-workaround:
   sudo usermod -aG qemu ${USER}
   sudo restorecon -rv /var/lib/libvirt/
   sudo restorecon -rv /var/log/libvirt/
+
+# Workaround for dms-greeter
+[group('MyJusts')]
+dms-greeter-workaround:
+	#!/bin/sh
+	getent greeter greeter || sudo groupadd -r greeter
+  getent passwd greeter || sudo useradd -r -g greeter -d /var/lib/greeter -s /bin/bash -c "System Greeter" greeter
+  sudo mkdir -p /var/lib/greeter
+  sudo chown greeter:greeter /var/lib/greeter
+
