@@ -75,6 +75,7 @@ setup-chezmoi:
 # Workaround for libvirt issues
 [group('MyJusts')]
 libvirt-workaround:
+  #!/bin/sh
   getent group qemu || sudo groupadd -g 107 qemu
   getent group libvirt || sudo groupadd -g 963 libvirt
   getent passwd qemu || sudo useradd -u 107 -g 107 -d / -s /usr/sbin/nologin qemu
@@ -86,8 +87,8 @@ libvirt-workaround:
 # Workaround for dms-greeter
 [group('MyJusts')]
 dms-greeter-workaround:
-	#!/bin/sh
-	getent greeter greeter || sudo groupadd -r greeter
+  #!/bin/sh
+  getent greeter greeter || sudo groupadd -r greeter
   getent passwd greeter || sudo useradd -r -g greeter -d /var/lib/greeter -s /bin/bash -c "System Greeter" greeter
   sudo mkdir -p /var/lib/greeter
   sudo chown greeter:greeter /var/lib/greeter
