@@ -8,6 +8,9 @@ modules:
         - avengemedia/danklinux
     install:
       packages:
+        - libdisplay-info
+        - libdisplay-info
+        - xwayland-satellite
         - repo: copr:copr.fedorainfracloud.org:yalter:niri-git
           packages:
             - niri
