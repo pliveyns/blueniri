@@ -88,7 +88,7 @@ libvirt-workaround:
 [group('MyJusts')]
 dms-greeter-workaround:
   #!/bin/sh
-  getent greeter greeter || sudo groupadd -r greeter
+  getent group greeter || sudo groupadd -r greeter
   getent passwd greeter || sudo useradd -r -g greeter -d /var/lib/greeter -s /bin/bash -c "System Greeter" greeter
   sudo mkdir -p /var/lib/greeter
   sudo chown greeter:greeter /var/lib/greeter
