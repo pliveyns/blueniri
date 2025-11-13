@@ -37,6 +37,7 @@ modules:
         - just
         - powerstat
         - git
+        - wget
         
     remove:
       packages:
