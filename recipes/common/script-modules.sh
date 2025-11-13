@@ -1,0 +1,7 @@
+modules:
+
+  - type: script
+    snippets: []
+    scripts:
+      - pio_udevrules.sh          # Download and install Platformio udev rules
+
