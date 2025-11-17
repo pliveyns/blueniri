@@ -7,4 +7,8 @@ modules:
         - iwlwifi-dvm-firmware
         - iwlwifi-mld-firmware
         - iwlwifi-mvm-firmware
+        - alsa-firmware
+        - alsa-sof-firmware
+        - alsa-tools-firmware
+        - intel-audio-firmware
 
