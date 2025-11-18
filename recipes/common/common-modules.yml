@@ -38,7 +38,7 @@ modules:
         - powerstat
         - git
         - wget
-        - networkmanager-wifi
+        - NetworkManager-wifi
         
     remove:
       packages:
