@@ -76,20 +76,26 @@ setup-chezmoi:
 [group('MyJusts')]
 libvirt-workaround:
   #!/bin/sh
-  getent group qemu || sudo groupadd -g 107 qemu
-  getent group libvirt || sudo groupadd -g 963 libvirt
-  getent passwd qemu || sudo useradd -u 107 -g 107 -d / -s /usr/sbin/nologin qemu
+  getent group qemu > /dev/null || sudo groupadd -g 107 qemu
+  getent group libvirt > /dev/null || sudo groupadd -r libvirt
+  getent passwd qemu > /dev/null || sudo useradd -u 107 -g 107 -d / -s /usr/sbin/nologin qemu
   sudo usermod -aG libvirt ${USER}
   sudo usermod -aG qemu ${USER}
-  sudo restorecon -rv /var/lib/libvirt/
-  sudo restorecon -rv /var/log/libvirt/
+  sudo restorecon -R /var/lib/libvirt/
+  sudo restorecon -R /var/log/libvirt/
 
 # Workaround for dms-greeter
 [group('MyJusts')]
 dms-greeter-workaround:
   #!/bin/sh
-  getent group greeter || sudo groupadd -r greeter
-  getent passwd greeter || sudo useradd -r -g greeter -d /var/lib/greeter -s /bin/bash -c "System Greeter" greeter
+  getent group greeter > /dev/null || sudo groupadd -r greeter
+  getent passwd greeter > /dev/null || sudo useradd -r -g greeter -d /var/lib/greeter -s /bin/bash -c "System Greeter" greeter
   sudo mkdir -p /var/lib/greeter
   sudo chown greeter:greeter /var/lib/greeter
+
+# Workaround for rtkit
+[group('MyJusts')]
+rtkit-workaround:
+  #!/bin/bash
+  getent passwd rtkit > /dev/null || sudo useradd -r -d / -s /usr/sbin/nologin -c "RealtimeKit" rtkit
 
