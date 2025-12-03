@@ -19,6 +19,12 @@ modules:
         - dms-greeter
         - dgop
 
+  - type: dnf
+    install:
+      packages:
+        - plymouth
+        - plymouth-system-theme
+
   - type: systemd
     system:
       enabled:
