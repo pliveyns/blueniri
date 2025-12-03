@@ -10,10 +10,6 @@ modules:
       #- "dnf5 install -y 'dnf5-command(copr)'"
       - "dnf5 install -y 'dnf5-command(config-manager)'"
 
-  - type: containerfile
-    snippets:
-      - RUN rm /opt && mkdir /opt
-
   # Universal Blue packages
   - type: dnf
     repos:
@@ -43,6 +39,7 @@ modules:
         - git
         - wget
         - NetworkManager-wifi
+        - Thunar
         
     remove:
       packages:
