@@ -8,6 +8,7 @@ modules:
         - avengemedia/danklinux
     install:
       packages:
+        - libwayland-server0
         - libdisplay-info
         - libseat
         - xwayland-satellite
