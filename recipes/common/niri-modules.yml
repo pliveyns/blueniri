@@ -35,4 +35,6 @@ modules:
   - type: script
     snippets:
       - "sed -i '/^command = /c command = \"/usr/bin/dms-greeter --command niri -C /etc/greetd/dms-niri.kdl\"' /etc/greetd/config.toml"
+    scripts:
+      - bootc-update-policy.sh
 
