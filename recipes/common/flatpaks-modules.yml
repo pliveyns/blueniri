@@ -21,12 +21,14 @@ modules:
 
           # Office
           #- org.libreoffice.LibreOffice          # The LibreOffice productivity suite
-          - org.onlyoffice.desktopeditors
+          - org.onlyoffice.desktopeditors        # Office suite
           - org.gnome.Papers                     # Documents reader
           #- com.logseq.Logseq                    # Connect your notes and knowledge
           - com.github.johnfactotum.Foliate      # Foliate ebook reader
           - com.github.marktext.marktext         # MarkText markdown tool
-          #- org.gnome.SimpleScan                 # Gnome Document Scanner
+          - org.gnome.SimpleScan                 # Gnome Document Scanner
+          - com.zettlr.Zettlr                    # MarkDown Editor
+          - com.zotero.Zotero                    # Research Collector
 
           # Security
           - com.bitwarden.desktop                # Bitwarden password tool
@@ -43,6 +45,7 @@ modules:
           - org.fedoraproject.MediaWriter        # Fedora Media Writer
           - com.github.tchx84.Flatseal           # Manage Flatpak Permissions
           - org.gnome.Calculator                 # Gnome Calculator
+          - org.raspberrypi.rpi-imager           # Raspberry Pi imaging utility
 
           # DevOps
           - com.vscodium.codium                  # VSCodium Code Editor
