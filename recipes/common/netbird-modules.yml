@@ -1,17 +1,17 @@
 modules:
-#  - type: dnf
-#    repos:
-#      files:
-#        - netbird.repo
-#    install:
-#      packages:
-#        - netbird
-#        - netbird-ui
-  - type: script
-    snippets:
-      - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
-  - type: systemd
-    system:
-      enabled:
-        - netbird.service
+  - type: dnf
+    repos:
+      files:
+        - netbird.repo
+    install:
+      packages:
+        - netbird
+        - netbird-ui
+#  - type: script
+#    snippets:
+#      - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
+#  - type: systemd
+#    system:
+#      enabled:
+#        - netbird.service
 
