@@ -28,7 +28,7 @@ modules:
           - com.github.marktext.marktext         # MarkText markdown tool
           - org.gnome.SimpleScan                 # Gnome Document Scanner
           - com.zettlr.Zettlr                    # MarkDown Editor
-          - com.zotero.Zotero                    # Research Collector
+          - org.zotero.Zotero                    # Research Collector
 
           # Security
           - com.bitwarden.desktop                # Bitwarden password tool
