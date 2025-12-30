@@ -29,6 +29,7 @@ modules:
           - org.gnome.SimpleScan                 # Gnome Document Scanner
           - com.zettlr.Zettlr                    # MarkDown Editor
           - org.zotero.Zotero                    # Research Collector
+          - com.github.jeromerobert.pdfarranger  # PDF Arranger
 
           # Security
           - com.bitwarden.desktop                # Bitwarden password tool
