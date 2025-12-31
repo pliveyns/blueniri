@@ -21,4 +21,6 @@ modules:
       - sudo mv netbird /usr/bin/netbird
       - sudo chown root:root /usr/bin/netbird
       - sudo chmod +x /usr/bin/netbird
+      - sudo netbird service install
+      - sudo netbird service start
 
