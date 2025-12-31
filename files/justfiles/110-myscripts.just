@@ -99,3 +99,11 @@ rtkit-workaround:
   #!/bin/bash
   getent passwd rtkit > /dev/null || sudo useradd -r -d / -s /usr/sbin/nologin -c "RealtimeKit" rtkit
 
+# Initialize netbird
+[group('MyJusts')]
+initialize-netbird:
+  #!/bin/bash
+  sudo netbird service install
+  sudo netbird service start
+  sudo netbird up
+

@@ -1,26 +1,6 @@
 modules:
-#  - type: dnf
-#    repos:
-#      files:
-#        - netbird.repo
-#    install:
-#      packages:
-#        - netbird
-#        - netbird-ui
-#  - type: script
-#    snippets:
-#      - "curl -fsSL https://pkgs.netbird.io/install.sh | sh"
-#  - type: systemd
-#    system:
-#      enabled:
-#        - netbird.service
+
   - type: script
-    snippets:
-      - "curl -L -o ./netbird_0.61.0.tar.gz https://github.com/netbirdio/netbird/releases/download/v0.61.0/netbird_0.61.0_linux_amd64.tar.gz"
-      - tar xzf ./netbird_0.61.0.tar.gz
-      - mv netbird /usr/bin/netbird
-      - chown root:root /usr/bin/netbird
-      - chmod +x /usr/bin/netbird
-      #- netbird service install
-      #- netbird service start
+    scripts:
+      - netbird_install.sh
 
