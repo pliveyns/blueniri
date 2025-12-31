@@ -18,9 +18,9 @@ modules:
     snippets:
       - "curl -L -o ./netbird_0.61.0.tar.gz https://github.com/netbirdio/netbird/releases/download/v0.61.0/netbird_0.61.0_linux_amd64.tar.gz"
       - tar xzf ./netbird_0.61.0.tar.gz
-      - sudo mv netbird /usr/bin/netbird
-      - sudo chown root:root /usr/bin/netbird
-      - sudo chmod +x /usr/bin/netbird
-      - sudo netbird service install
-      - sudo netbird service start
+      - mv netbird /usr/bin/netbird
+      - chown root:root /usr/bin/netbird
+      - chmod +x /usr/bin/netbird
+      #- netbird service install
+      #- netbird service start
 
