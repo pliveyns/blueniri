@@ -1,6 +1,6 @@
 # blueniri &nbsp; [![bluebuild build badge](https://github.com/pliveyns/blueniri/actions/workflows/build.yml/badge.svg)](https://github.com/pliveyns/blueniri/actions/workflows/build.yml)
 
-This is a custom image of Fedora Atomic with niri WM.
+This is a custom image of Fedora Atomic with niri Scrolling Window Manager and Dank Material Shell.
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
