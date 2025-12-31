@@ -11,19 +11,11 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- First rebase to the unsigned image, to get the proper signing keys and policies installed:
+- Rebase to the customized image:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/pliveyns/blueniri:latest
+  sudo bootc switch ghcr.io/pliveyns/blueniri:latest
   ```
 - Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
-- Then rebase to the signed image, like so:
-  ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/pliveyns/blueniri:latest
-  ```
-- Reboot again to complete the installation
   ```
   systemctl reboot
   ```
