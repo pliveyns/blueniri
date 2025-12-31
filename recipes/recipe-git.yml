@@ -21,7 +21,7 @@ modules:
   - from-file: common/flatpaks-modules.yml
   - from-file: common/fonts-modules.yml
   - from-file: common/script-modules.yml
-  #- from-file: common/netbird-modules.yml
+  - from-file: common/netbird-modules.yml
   - from-file: common/virtualisation-modules.yml
   - from-file: common/hw-modules.yml
 
