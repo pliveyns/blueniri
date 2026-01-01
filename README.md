@@ -20,6 +20,12 @@ To rebase an existing atomic Fedora installation to the latest build:
   systemctl reboot
   ```
 
+## Images
+
+blueniri: fedora 43 + niri + DMS
+blueniri-git: fedora 43 + niri-git + dms-git
+blueniri-nxt: fedora rawhide + niri-git + dms-git
+
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
