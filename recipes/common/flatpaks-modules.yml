@@ -47,6 +47,7 @@ modules:
           - com.github.tchx84.Flatseal           # Manage Flatpak Permissions
           - org.gnome.Calculator                 # Gnome Calculator
           - org.raspberrypi.rpi-imager           # Raspberry Pi imaging utility
+          - com.rustdesk.RustDesk                # Secure remote desktop access
 
           # DevOps
           - com.vscodium.codium                  # VSCodium Code Editor
