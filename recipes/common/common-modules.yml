@@ -41,6 +41,7 @@ modules:
         - NetworkManager-wifi
         - Thunar
         - nautilus
+        - libglvnd-gles
         - cifs-utils
         
     remove:
