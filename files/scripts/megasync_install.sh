@@ -9,4 +9,4 @@ set -oue pipefail
 #rpm --install https://mega.nz/linux/repo/${FEDORAVERSION}/x86_64/${MEGASYNCVERSION}.rpm
 #rpm --install https://mega.nz/linux/repo/${FEDORAVERSION}/x86_64/${NAUTILUSMEGASYNCVERSION}.rpm
 
-wget https://mega.nz/linux/repo/Fedora_43/x86_64/megasync-Fedora_43.x86_64.rpm && sudo dnf install "$PWD/megasync-Fedora_43.x86_64.rpm"
+wget https://mega.nz/linux/repo/Fedora_43/x86_64/megasync-Fedora_43.x86_64.rpm && sudo dnf install -y "$PWD/megasync-Fedora_43.x86_64.rpm"
