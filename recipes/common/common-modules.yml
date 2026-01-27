@@ -27,6 +27,7 @@ modules:
   - type: dnf
     install:
       packages:
+        - glibc-langpack-en
         - langpacks-en_GB
         - distrobox
         - alacritty
