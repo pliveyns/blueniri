@@ -3,7 +3,7 @@
 set -oue pipefail
 
 # Netbird binary install from github
-VERSION=0.61.0
+VERSION=0.64.5
 curl -L -o ./netbird_${VERSION}.tar.gz https://github.com/netbirdio/netbird/releases/download/v${VERSION}/netbird_${VERSION}_linux_amd64.tar.gz
 tar xzf ./netbird_${VERSION}.tar.gz
 mv netbird /usr/bin/netbird
