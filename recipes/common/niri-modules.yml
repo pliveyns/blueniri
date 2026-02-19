@@ -17,6 +17,7 @@ modules:
         - dms-cli
         - dms-greeter
         - dgop
+        - danksearch
 
   - type: dnf
     install:

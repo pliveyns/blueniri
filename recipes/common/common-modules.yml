@@ -44,6 +44,7 @@ modules:
         - nautilus
         - libglvnd-gles
         - cifs-utils
+        - adw-gtk3-theme
         
     remove:
       packages:
