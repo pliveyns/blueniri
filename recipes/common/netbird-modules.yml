@@ -1,6 +1,17 @@
 modules:
 
-  - type: script
-    scripts:
-      - netbird_install.sh
+#  - type: script
+#    scripts:
+#      - netbird_install.sh
+
+type: dnf
+repos:
+  files:
+    - netbird.repo
+  keys:
+    - https://pkgs.netbird.io/yum/repodata/repomd.xml.key
+install:
+  packages:
+    - netbird
+    - netbird-ui
 
