@@ -10,4 +10,4 @@ tar xzf ./netbird_${VERSION}.tar.gz
 mv netbird /usr/bin/netbird
 chown root:root /usr/bin/netbird
 chmod +x /usr/bin/netbird
-rpm --install --nodeps --no-gpgchecks https://github.com/netbirdio/netbird/releases/download/v${VERSION}/netbird-ui_${VERSION}_linux_amd64.rpm
+dnf install --no-gpgchecks https://github.com/netbirdio/netbird/releases/download/v${VERSION}/netbird-ui_${VERSION}_linux_amd64.rpm
