@@ -4,6 +4,10 @@ modules:
       - scope: system
         notify: true
         install:
+          # Themes
+          - org.gtk.Gtk3theme.adw-gtk3
+          - org.gtk.Gtk3theme.adw-gtk3-dark
+
           # Internet
           #- org.mozilla.firefox
           - app.zen_browser.zen
