@@ -41,6 +41,8 @@ modules:
         - wget
         - NetworkManager-wifi
         - Thunar
+        - thunar-archive-plugin
+        - thunar-volman
         - nautilus
         - libglvnd-gles
         - cifs-utils
