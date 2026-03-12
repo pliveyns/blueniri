@@ -79,9 +79,11 @@ libvirt-workaround:
   getent group qemu > /dev/null || sudo groupadd -g 107 qemu
   getent group libvirt > /dev/null || sudo groupadd -r libvirt
   getent passwd qemu > /dev/null || sudo useradd -u 107 -g 107 -d / -s /usr/sbin/nologin qemu
+  getent passwd dnsmasq > /dev/null || sudo useradd -r dnsmasq
   sudo usermod -aG libvirt ${USER}
   sudo usermod -aG qemu ${USER}
   sudo systemctl start libvirtd.service
+  sudo virsh net-start default
   sudo restorecon -R /var/lib/libvirt/
   sudo restorecon -R /var/log/libvirt/
 
