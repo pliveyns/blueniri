@@ -11,18 +11,18 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 
 To rebase an existing atomic Fedora installation to the latest build:
 
-- Rebase to the customized image:
-  ```
-  sudo bootc switch ghcr.io/pliveyns/blueniri:latest
-  ```
-- Reboot to complete the rebase:
-  ```
-  systemctl reboot
-  ```
+- Rebase to the unsigned image, to get the proper signing keys and policies installed (system will reboot):
+```
+  sudo bootc switch --apply ghcr.io/pliveyns/blueniri:latest
+```
+- Then rebase to the signed image, like this (system will reboot):
+```
+  sudo bootc switch --enforce-container-sigpolicy --apply ghcr.io/fiftydinar/gidro-os:latest
+```
 
 ## Images
 
-- blueniri: fedora 43 + niri + DMS
+- blueniri: fedora 43 + niri + dms
 - blueniri-git: fedora 43 + niri-git + dms-git
 - blueniri-nxt: fedora rawhide + niri-git + dms-git
 
