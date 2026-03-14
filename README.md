@@ -17,7 +17,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 ```
 - Then rebase to the signed image, like this (system will reboot):
 ```
-  sudo bootc switch --enforce-container-sigpolicy --apply ghcr.io/fiftydinar/gidro-os:latest
+  sudo bootc switch --enforce-container-sigpolicy --apply ghcr.io/pliveyns/blueniri:latest
 ```
 
 ## Images
