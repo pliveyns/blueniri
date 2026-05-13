@@ -12,4 +12,6 @@ modules:
         - qemu-kvm
         - guestfs-tools
         - genisoimage
+        - kubernetes1.35-client
+        - bcvk
 
