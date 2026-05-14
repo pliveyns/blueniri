@@ -48,6 +48,7 @@ modules:
         - libglvnd-gles
         - cifs-utils
         - adw-gtk3-theme
+        - xdg-utils
         
     remove:
       packages:
