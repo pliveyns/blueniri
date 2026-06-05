@@ -25,6 +25,9 @@ modules:
         - ublue-os-just
 
   - type: dnf
+    repos:
+      copr:
+        - lihaohong/yazi
     install:
       packages:
         - glibc-langpack-en
