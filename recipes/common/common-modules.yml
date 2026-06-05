@@ -50,6 +50,7 @@ modules:
         - adw-gtk3-theme
         - xdg-utils
         - yazi
+        - neovim
         
     remove:
       packages:
