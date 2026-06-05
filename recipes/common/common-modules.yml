@@ -49,6 +49,7 @@ modules:
         - cifs-utils
         - adw-gtk3-theme
         - xdg-utils
+        - yazi
         
     remove:
       packages:
