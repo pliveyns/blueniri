@@ -55,6 +55,7 @@ modules:
         - yazi
         - neovim
         - ffmpeg-free
+        - glib
         
     remove:
       packages:
