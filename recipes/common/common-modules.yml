@@ -54,6 +54,7 @@ modules:
         - xdg-utils
         - yazi
         - neovim
+        - ffmpeg-free
         
     remove:
       packages:
