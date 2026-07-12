@@ -22,7 +22,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 ## Images
 
-- blueniri: fedora 43 + niri + dms
+- blueniri: fedora 44 + niri + dms
 - blueniri-git: fedora 44 + niri-git + dms-git
 - blueniri-nxt: fedora rawhide + niri-git + dms-git
 
