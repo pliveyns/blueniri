@@ -27,6 +27,10 @@ modules:
         - power-profiles-daemon
         - cups-pk-helper
         - fira-code-fonts
+        - kf5-kimageformats
+        - kf6-kimageformats
+        - rsms-inter-fonts
+        - rsms-inter-vf-fonts
 
   - type: systemd
     system:
