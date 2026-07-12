@@ -24,6 +24,9 @@ modules:
       packages:
         - plymouth
         - plymouth-system-theme
+        - power-profiles-daemon
+        - cups-pk-helper
+        - fira-code-fonts
 
   - type: systemd
     system:
