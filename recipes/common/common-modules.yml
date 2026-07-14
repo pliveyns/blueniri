@@ -71,3 +71,8 @@ modules:
       - bootc-update-policy.sh
       - bootc-sudo-access.sh
 
+  - type: systemd
+    user:
+      enabled:
+        - udiskie.service
+
