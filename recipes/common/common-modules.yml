@@ -59,6 +59,7 @@ modules:
         - gvfs-nfs
         - gvfs-smb
         - gvfs-goa
+        - udiskie
         
     remove:
       packages:
