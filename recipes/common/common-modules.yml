@@ -60,7 +60,6 @@ modules:
         - gvfs-smb
         - gvfs-goa
         - udiskie
-        - libappindicator
         
     remove:
       packages:
