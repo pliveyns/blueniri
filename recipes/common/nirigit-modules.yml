@@ -19,12 +19,20 @@ modules:
         - dms-cli
         - dms-greeter
         - dgop
+        - danksearch
 
   - type: dnf
     install:
       packages:
         - plymouth
         - plymouth-system-theme
+        - power-profiles-daemon
+        - cups-pk-helper
+        - fira-code-fonts
+        - kf5-kimageformats
+        - kf6-kimageformats
+        - rsms-inter-fonts
+        - rsms-inter-vf-fonts
 
   - type: systemd
     system:
