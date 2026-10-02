@@ -60,6 +60,7 @@ modules:
         - gvfs-smb
         - gvfs-goa
         - udiskie
+        - bats
         
     remove:
       packages:
