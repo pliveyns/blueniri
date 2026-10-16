@@ -61,7 +61,6 @@ modules:
         - gvfs-goa
         - udiskie
         - bats
-        - gparted
         
     remove:
       packages:
