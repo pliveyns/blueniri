@@ -50,6 +50,8 @@ modules:
         - nautilus
         - libglvnd-gles
         - cifs-utils
+        - usbutils
+        - bluez
         - adw-gtk3-theme
         - xdg-utils
         - yazi

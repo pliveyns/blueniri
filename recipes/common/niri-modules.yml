@@ -4,8 +4,8 @@ modules:
     repos:
       copr:
         - yalter/niri
-        - avengemedia/dms
-        - avengemedia/danklinux
+        - duxlabs/dms
+        - duxlabs/dux-repo
     install:
       packages:
         - libwayland-server
