@@ -15,9 +15,11 @@ modules:
         - niri
         - dms
         - dms-cli
-        - dms-greeter
-        - dgop
-        - danksearch
+        - dux-greeter
+        - dux-gop
+        - dux-search
+        - dux-calendar
+        - dux-files
 
   - type: dnf
     install:
@@ -31,6 +33,7 @@ modules:
         - kf6-kimageformats
         - rsms-inter-fonts
         - rsms-inter-vf-fonts
+        - cava
 
   - type: systemd
     system:
