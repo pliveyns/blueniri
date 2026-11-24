@@ -44,10 +44,6 @@ modules:
         - git
         - wget
         - NetworkManager-wifi
-        - Thunar
-        - thunar-archive-plugin
-        - thunar-volman
-        - nautilus
         - libglvnd-gles
         - cifs-utils
         - usbutils
@@ -63,6 +59,8 @@ modules:
         - gvfs-goa
         - udiskie
         - bats
+        - pam_oo7
+        - oo7-cli
         
     remove:
       packages:
