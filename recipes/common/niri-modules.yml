@@ -42,6 +42,7 @@ modules:
     user:
       enabled:
         - dms.service
+        - dcal.service
 
   - type: script
     snippets:
