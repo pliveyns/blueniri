@@ -77,4 +77,5 @@ modules:
       enabled:
         - udiskie.service
         - oo7-daemon
+        - oo7-portal
 
